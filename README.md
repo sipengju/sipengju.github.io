@@ -1,1 +1,37 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+# 司鹏举个人主页（中英文版）
+
+## 页面及修改文件
+
+| 文件 | 用途 |
+| --- | --- |
+| index.html | 中文主页：导航、个人介绍、工作经历、教育经历、学术成果、联系信息 |
+| en/index.html | 英文主页；第一作者、通讯作者标注统一为英文 |
+| assets/site.css | 两页共用的样式，包括顶部语言按钮、手机布局和深浅色模式 |
+| assets/site.js | 两页共用的交互，包括双语提示、语言切换、导航、邮箱复制及照片预览 |
+| images/ | 两页共用的原有照片和微信二维码 |
+| stylesheet.css | 原仓库遗留样式文件；现有页面未引用，保留 |
+| CNAME | 原自定义域名设置，保留 |
+
+## 上传到 GitHub
+
+1. 解压压缩包，进入 sipengju.github.io-main 文件夹。
+2. 将文件夹内的内容放到 sipengju.github.io 仓库根目录。不要把整个 sipengju.github.io-main 文件夹再套一层上传。
+3. 覆盖原 index.html，新增 en 和 assets 文件夹，同时保留原 images、CNAME 等文件。
+4. 提交到 GitHub Pages 当前使用的分支。等现有 Pages 部署完成后刷新主页。
+5. 中文主页为 https://sipengju.github.io/ ，英文主页为 https://sipengju.github.io/en/ 。若启用了 CNAME，自定义域名上也能切换。
+
+直接双击 index.html 也可预览；线上 HTTPS 环境可使用邮箱复制。英文页使用相对路径访问共享图片和样式。
+
+## 后续维护
+
+- 更新简介、经历或论文时，同时维护 index.html 和 en/index.html。
+- 论文题名、作者名单、期刊名称、论文链接保留原文，中文页翻译作者角色和栏目。
+- 修改视觉样式编辑 assets/site.css；修改提示文案或交互编辑 assets/site.js。
+- 中英文页共用 darkMode 设置。切换语言可保留当前导航栏目。
+- 内容依据原始压缩包整理，未新增或重新核验履历、论文数量等事实。
+- 原访问计数接口路径包含 yangpu-tang.github.io，可能不属于本主页，已保留原行为，建议后续核实计数服务归属。
+
+## 验证
+
+已检查 JavaScript 语法、两页本地资源路径、栏目锚点以及语言互链。
+当前环境没有可运行的浏览器，未完成实际浏览器的桌面/手机视觉验证。上线后请检查语言按钮、手机导航、主题切换、邮箱复制和照片预览。
