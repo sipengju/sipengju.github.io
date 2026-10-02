@@ -232,6 +232,7 @@ const ui = key => uiLabels[key][isChinese ? 0 : 1];
       document.getElementById("publications"),
       document.getElementById("Appointments"),
       document.getElementById("Education"),
+      document.getElementById("projects"),
       document.getElementById("services"),
       document.getElementById("gallery")
     ].filter(Boolean);
